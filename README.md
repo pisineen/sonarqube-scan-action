@@ -34,7 +34,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
     - name: SonarQube Quality Gate check
-      uses: sonarsource/sonarqube-quality-gate-action@master
+      uses: pisineen/sonarqube-scan-action@main
       # Force to fail step after specific time
       timeout-minutes: 5
       env:
