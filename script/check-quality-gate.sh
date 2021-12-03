@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-#source "$(dirname "$0")/common.sh"
 source "$(dirname "$0")/common.sh"
 
 if [[ -z "${SONAR_TOKEN}" ]]; then
@@ -46,3 +45,4 @@ elif [[ ${qualityGateStatus} == "ERROR" ]];then
 else
    fail "Quality Gate not set for the project. Please configure the Quality Gate in SonarQube or remove sonarqube-quality-gate action from the workflow."
 fi
+
