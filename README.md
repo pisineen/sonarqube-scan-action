@@ -1,3 +1,11 @@
+chmod my file locally before pushing to github with :
+```chmod +x script/check-quality-gate.sh
+```
+run git update-index before committing my files:
+```
+git update-index --chmod=+x docker/backend/staging/wsgi-entrypoint.sh
+```
+
 ```
 on:
   # Trigger analysis when pushing in master or pull requests, and when creating
