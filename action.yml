@@ -7,7 +7,9 @@ branding:
 runs:
   using: "composite"
   steps:
-    - run: $GITHUB_ACTION_PATH/script/check-quality-gate.sh ${{ inputs.scanMetadataReportFile  }}
+    - run: chmod +x ${{ github.action_path }}/script/check-quality-gate.sh
+      shell: bash
+    - run: ${{ github.action_path }}/script/check-quality-gate.sh ${{ inputs.scanMetadataReportFile  }}
       shell: bash
 inputs:
   scanMetadataReportFile:
