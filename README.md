@@ -1,12 +1,12 @@
 chmod my file locally before pushing to github with :
 ```
-chmod +x script/check-quality-gate.sh
-chmod +x script/common.sh
+chmod +x ./script/check-quality-gate.sh
+chmod +x ./script/common.sh
 ```
 run git update-index before committing my files:
 ```
-git update-index --chmod=+x script/check-quality-gate.sh
-git update-index --chmod=+x script/common.sh
+git update-index --chmod=+x ./script/check-quality-gate.sh
+git update-index --chmod=+x ./script/common.sh
 ```
 
 ```
